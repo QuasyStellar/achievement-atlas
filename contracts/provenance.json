@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/ton-blockchain/nft-contract",
+  "commit": "0b493104cd547d0fd52b7e6fd3c046fc365fe3d4",
+  "license": "vendor/LICENSE",
+  "sha256": {
+    "LICENSE": "5a3aa09d95951fc92794dd2096e653b370586058c745bc86c7f86227066b26ac",
+    "nft/nft-collection.fc": "8bb38b430b5326d73f7d1837f97e652d6e4b0f452618894e073454cb7b9a0e7b",
+    "nft/nft-item.fc": "96b2245792b157a4e5575aa8e02a549739ba550d589d50fed65c9f3d26a8a551",
+    "nft/op-codes.fc": "e25604a74fed44d484af0b68267f9f270dcd075a9b1d34441ed9817d714e0135",
+    "nft/params.fc": "65925e6e45e20dbc836dbec2dfd660e874aa7f1049d187ae543b469018de9a7a",
+    "stdlib.fc": "67b941b5fd9b900ad2b7f0259e98f8c359521f75107ade4bfc10a7676ada516d"
+  },
+  "modification": "src/nft-collection.fc changes only get_nft_content to return individual TEP-64 content. Storage layout and reference item unchanged. Not audited."
+}
