@@ -29,8 +29,15 @@ const server = createServer(app);
 await new Promise<void>(resolve => server.listen(port, '127.0.0.1', resolve));
 const browser = await firefox.launch({ headless: true });
 try {
-  const page = await (await browser.newContext({ viewport: { width: 1360, height: 820 } })).newPage();
-  const shot = (name: string) => page.screenshot({ path: `${out}${name}.png`, fullPage: true });
+  const page = await (await browser.newContext({ viewport: { width: 1360, height: 820 }, deviceScaleFactor: 2, colorScheme: 'light' })).newPage();
+  // Высота окна подгоняется под содержимое, чтобы боковая панель занимала всю высоту кадра.
+  const shot = async (name: string) => {
+    await page.setViewportSize({ width: 1360, height: 820 });
+    const height = await page.evaluate(() => Math.max(820, document.documentElement.scrollHeight));
+    await page.setViewportSize({ width: 1360, height });
+    await page.screenshot({ path: `${out}${name}.png` });
+    await page.setViewportSize({ width: 1360, height: 820 });
+  };
   const register = async (name: string, email: string) => {
     await page.goto(base, { waitUntil: 'networkidle' });
     await page.click('.hero-actions button.primary');
