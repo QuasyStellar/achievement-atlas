@@ -1,0 +1,24 @@
+{
+  "network": "testnet",
+  "collectionAddress": "0:8d4eaa9d4db36eb343c5f2eb5fff4df5716606ea11a5449d4d01c334da7b14c0",
+  "walletAddress": "0:666c66e7088a46b6ff0e7cea7f3e8a544b7e76f960a8f03671d182609e0de777",
+  "nextIndex": 1,
+  "metadata": {
+    "name": "Achievement Atlas",
+    "description": "Game achievements. TON testnet coursework collection. No personal data."
+  },
+  "deploymentTransactionVerified": true,
+  "transactionHash": "99337d9321ae5f86a9d745471d419d026371846804fb0b75d1795c2e02b550bc",
+  "item": {
+    "address": "0:14e8d6863535b0ed8f49e707d89e22e458540fa695688139d88c617ae2e0da21",
+    "initialized": true,
+    "index": 0,
+    "collectionAddress": "0:8d4eaa9d4db36eb343c5f2eb5fff4df5716606ea11a5449d4d01c334da7b14c0",
+    "owner": "0:666c66e7088a46b6ff0e7cea7f3e8a544b7e76f960a8f03671d182609e0de777",
+    "metadata": {
+      "name": "Первый шаг",
+      "description": "Завершите первый матч. Achievement Atlas · TON testnet."
+    },
+    "note": "Getter verification alone is not confirmation of a particular mint job"
+  }
+}

@@ -1,0 +1,30 @@
+
+> achievement-atlas@1.0.0 test:e2e
+> tsx tools/e2e.ts
+
+--- Starting Achievement Atlas End-to-End Test ---
+[E2E] Server target baseUrl: http://127.0.0.1:37241
+[E2E] Browser: firefox 155.0
+[E2E] Step 1: Navigating to homepage...
+[E2E] Page title: "Обзор — Achievement Atlas"
+[E2E] Brand text: "Atlas."
+[E2E] Firefox content sandbox verified: [{"pid":25137,"parent":25053,"name":"Web Content","seccomp":"2","noNewPrivs":"1"}]
+[E2E] Step 2: Registering new player...
+[E2E] Step 3: Verifying authenticated user state...
+[E2E] Authenticated user: "Игрок Тестовый"
+[E2E] Summary metric items displayed: 4
+[E2E] Verified user in DB with ID: cdaa094a-d031-4164-b02f-8a3a7820cf38
+[E2E] Step 4: Ingesting game event via trusted server API...
+[E2E] Event ingestion result: {"eventId":"e2e-match-1","playerId":"cdaa094a-d031-4164-b02f-8a3a7820cf38","unlocked":["first_match","first_win"],"counters":{"matches":1,"wins":1,"kills":0,"xp":0}}
+[E2E] Step 5: Refreshing UI and verifying progress...
+[E2E] Updated stats text: "Матчи1Победы1Устранения0Опыт, XP0"
+[E2E] Step 6: Navigating to Catalog...
+[E2E] Catalog items count: 6
+[E2E] Step 7: Checking NFT area of unlocked achievements...
+[E2E] Unlocked rewards count: 2
+[E2E] Step 8: Navigating to Events History...
+[E2E] Events count: 1
+[E2E] Step 9: Logging out...
+[E2E] Successfully logged out to public state.
+[E2E] Firefox content sandbox verified: [{"pid":25137,"parent":25053,"name":"Web Content","seccomp":"2","noNewPrivs":"1"}]
+=== ALL E2E USER JOURNEYS PASSED SUCCESSFULLY ===

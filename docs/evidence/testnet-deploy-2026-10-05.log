@@ -1,0 +1,11 @@
+{
+  "network": "testnet",
+  "rpc": "https://testnet.toncenter.com/api/v2/jsonRPC",
+  "collectionAddress": "0:d8949f6185d92704b2fdb68f7f10599d0af2e40a281b11173e292db1351c64aa",
+  "walletAddress": "0:92ddc8f22de6ab150c5ddba602baacfde77199696c08cddefa63d10a81478dba",
+  "transactionHash": "4b510adc36ab62b7585010a93d1140904ec9df900a2c0d09f44676ad6a9b4183",
+  "codeHash": "4afadf06bd55cb6406a97dec26c5b53f47ff80ce5a0903bc967e3497154484c9",
+  "itemCodeHash": "ba4d975d2b66231c1f0a0ccca6e8ff8f7ba0610c4b7639584b8e98303dc3128c",
+  "sourceCommit": "0b493104cd547d0fd52b7e6fd3c046fc365fe3d4",
+  "confirmedAt": "2026-10-05T19:23:33.310Z"
+}

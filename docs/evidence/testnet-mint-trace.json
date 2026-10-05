@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-09-30T17:32:57.238Z",
+  "network": "testnet",
+  "itemIndex": 0,
+  "messageHash": "38c907c5e73322871c7dae70261caa10f57fe3da71974a735f9852eb3446310b",
+  "traceVerified": true,
+  "initialized": true,
+  "expectedOwnerVerified": true,
+  "metadataCellVerified": true,
+  "transactions": [
+    {
+      "stage": "wallet",
+      "address": "0QBmbGbnCIpGtv8OfOp_PopUS352-WCo8DZx0YJgng3nd7JF",
+      "transactionHash": "40a2443049e749eb1d3e2b6b1bcaa9e4b9019b70486d6a90f89b699f9d4a5677",
+      "lt": "99996759000001",
+      "successful": true
+    },
+    {
+      "stage": "collection",
+      "address": "kQCNTqqdTbNus0PF8utf_031cWYG6hGlRJ1NAcM02nsUwAIs",
+      "transactionHash": "5233ba8441436a6708b01460f926add209f7b2fca9021cdf045f2ea49944a672",
+      "lt": "99996759000003",
+      "successful": true
+    },
+    {
+      "stage": "item",
+      "address": "kQAU6NaGNTWw7Y9J5wfYniLkWFQPppVogTnYjGF64uDaIV-W",
+      "transactionHash": "4bcaba203a1d09f3250b7a58f13b7673548ab42ff152026f7e821a9f9a3560d4",
+      "lt": "99996759000005",
+      "successful": true
+    }
+  ],
+  "itemExplorerUrl": "https://testnet.tonviewer.com/kQAU6NaGNTWw7Y9J5wfYniLkWFQPppVogTnYjGF64uDaIV-W"
+}
