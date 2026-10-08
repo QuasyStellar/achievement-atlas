@@ -96,7 +96,6 @@
   .updating { color: var(--muted); font-size: 11px; }
   .page-footer { display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid var(--line); padding-top: 20px; margin-top: 48px; color: var(--muted); font-size: 10px; }
   .page-footer span:first-child { color: var(--ink); font-weight: 500; }
-  .menu-toggle { display: none !important; }
 }
 @layer components {
   .button { display: inline-flex; justify-content: center; align-items: center; gap: 12px; padding: 12px 17px; min-height: 44px; border-radius: 6px; font-size: 12px; font-weight: 600; border: 1px solid transparent; transition: transform .16s, background .16s; }
@@ -304,6 +303,7 @@
   @keyframes appear { from { opacity: .35; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
 }
 @layer responsive {
+  @media (min-width: 761px) { .menu-toggle { display: none; } }
   @media (min-width: 1550px) { .hero-art { min-height: 400px; } .achievement-art { min-height: 184px; } }
   @media (max-width: 1150px) {
     .sidebar { width: 215px; padding-left: 18px; padding-right: 18px; }
@@ -361,7 +361,7 @@
     .brand strong { font-size: 22px; }
     .brand-symbol { width: 26px; height: 30px; }
     .brand-symbol span { width: 17px; height: 22px; }
-    .menu-toggle { display: inline-flex !important; color: var(--sidebar-ink); }
+    .menu-toggle { color: var(--sidebar-ink); }
     .menu-toggle:hover:not(:disabled) { background: var(--sidebar-active); }
     .sidebar-inner { display: none; }
     .sidebar.open .sidebar-inner { display: flex; }
@@ -491,4 +491,5 @@
 .card-mint-details code, .card-mint-details .address-link { overflow-wrap: anywhere; word-break: break-all; }
 .event-unlocked { color: var(--good); font-weight: 600; }
 .sidebar-inner > nav:first-child { margin-top: 40px; }
+@media (max-width: 760px) { .sidebar-inner > nav:first-child { margin-top: 18px; } }
 .page-content { padding-bottom: 48px; }
